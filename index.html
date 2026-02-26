@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2026 상반기 경영현황설명회 | GS EPS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HERO SECTION ===== -->
+  <header class="hero">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-label">GS EPS</p>
+      <h1 class="hero-title">2026 상반기<br>경영현황설명회</h1>
+      <div class="hero-meta">
+        <span class="meta-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          2026년 3월 5일 (목)
+        </span>
+        <span class="meta-divider">|</span>
+        <span class="meta-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          당진발전소
+        </span>
+        <span class="meta-divider">|</span>
+        <span class="meta-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          10:10 ~ 17:30
+        </span>
+      </div>
+      <div class="hero-badges">
+        <span class="badge">약 190명 참석</span>
+        <span class="badge">오전 인문학 특강</span>
+        <span class="badge">오후 경영현황 공유</span>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>스크롤하여 일정 확인</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="main-container">
+
+    <!-- D-DAY COUNTER -->
+    <section class="dday-section">
+      <div class="dday-card">
+        <p class="dday-label">경영현황설명회까지</p>
+        <p class="dday-number" id="ddayNumber">D-?</p>
+        <p class="dday-date">2026. 03. 05 (목)</p>
+      </div>
+    </section>
+
+    <!-- TIMETABLE -->
+    <section class="section" id="timetable">
+      <div class="section-header">
+        <h2 class="section-title">행사 일정</h2>
+        <p class="section-subtitle">오전 인문학 특강부터 오후 경영현황 공유까지</p>
+      </div>
+
+      <div class="timetable-wrapper">
+
+        <!-- 오전 -->
+        <div class="timetable-period">
+          <div class="period-label am">
+            <span>오전</span>
+          </div>
+          <div class="timetable-items">
+
+            <div class="timetable-item transport">
+              <div class="timetable-time">
+                <span class="time-start">08:30</span>
+                <span class="time-end">10:00</span>
+                <span class="time-duration">90분</span>
+              </div>
+              <div class="timetable-bar"></div>
+              <div class="timetable-content">
+                <div class="content-category">이동</div>
+                <h3 class="content-title">서울 직원 이동</h3>
+                <p class="content-desc">버스 2대 운행 (GS타워 출발 / 서울역 출발)</p>
+                <button class="content-btn" onclick="openModal('busModal')">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                  버스 탑승 안내 보기
+                </button>
+              </div>
+            </div>
+
+            <div class="timetable-item opening">
+              <div class="timetable-time">
+                <span class="time-start">10:10</span>
+                <span class="time-end">10:20</span>
+                <span class="time-duration">10분</span>
+              </div>
+              <div class="timetable-bar"></div>
+              <div class="timetable-content">
+                <div class="content-category">오프닝</div>
+                <h3 class="content-title">행사 안내 및 신규 입사자 인사</h3>
+                <p class="content-desc">신규 입사자 4명 소개 | 진행: 문인성 팀장</p>
+                <button class="content-btn" onclick="openModal('newcomerModal')">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                  신규 입사자 보기
+                </button>
+              </div>
+            </div>
+
+            <div class="timetable-item lecture highlight-item">
+              <div class="timetable-time">
+                <span class="time-start">10:20</span>
+                <span class="time-end">11:40</span>
+                <span class="time-duration">80분</span>
+              </div>
+              <div class="timetable-bar"></div>
+              <div class="timetable-content">
+                <div class="content-category">외부 특강</div>
+                <h3 class="content-title">인문학 특강</h3>
+                <p class="content-desc">미술사 속 '프레임'의 역사 | 박재연 아주대 교수</p>
+                <button class="content-btn" onclick="openModal('lectureModal')">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+                  강사 소개 보기
+                </button>
+              </div>
+            </div>
+
+            <div class="timetable-item break">
+              <div class="timetable-time">
+                <span class="time-start">11:40</span>
+                <span class="time-end">11:50</span>
+                <span class="time-duration">10분</span>
+              </div>
+              <div class="timetable-bar"></div>
+              <div class="timetable-content">
+                <div class="content-category">휴식</div>
+                <h3 class="content-title">휴식</h3>
+              </div>
+            </div>
+
+            <div class="timetable-item session">
+              <div class="timetable-time">
+                <span class="time-start">11:50</span>
+                <span class="time-end">12:10</span>
+                <span class="time-duration">20분</span>
+              </div>
+              <div class="timetable-bar"></div>
+              <div class="timetable-content">
+                <div class="content-category">52g 세션</div>
+                <h3 class="content-title">52g와 함께하는 AX여정</h3>
+                <p class="content-desc">DX추진실 AX 확산 계획 공유 | 진행: 정다운 매니저</p>
+              </div>
+            </div>
+
+            <div class="timetable-item meal">
+              <div class="timetable-time">
+                <span class="time-start">12:10</span>
+                <span class="time-end">14:00</span>
+                <span class="time-duration">110분</span>
+              </div>
+              <div class="timetable-bar"></div>
+              <div class="timetable-content">
+                <div class="content-category">식사</div>
+                <h3 class="content-title">점심 식사</h3>
+                <p class="content-desc">구내 식당 한식 특식 | 당진·서울 직원 조별 혼합 착석</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 오후 -->
+        <div class="timetable-period">
+          <div class="period-label pm">
+            <span>오후</span>
+          </div>
+          <div class="timetable-items">
+
+            <div class="timetable-item business">
+              <div class="timetable-time">
+                <span class="time-start">14:00</span>
+                <span class="time-end">14:30</span>
+                <span class="time-duration">30분</span>
+              </div>
+              <div class="timetable-bar"></div>
+              <div class="timetable-content">
+                <div class="content-category">사업 이해</div>
+                <h3 class="content-title">전력시장의 변화</h3>
+                <p class="content-desc">회사 사업 이해 세션 | 진행: 황태규 상무</p>
+              </div>
+            </div>
+
+            <div class="timetable-item break">
+              <div class="timetable-time">
+                <span class="time-start">14:30</span>
+                <span class="time-end">14:40</span>
+                <span class="time-duration">10분</span>
+              </div>
+              <div class="timetable-bar"></div>
+              <div class="timetable-content">
+                <div class="content-category">휴식</div>
+                <h3 class="content-title">휴식</h3>
+              </div>
+            </div>
+
+            <div class="timetable-item business">
+              <div class="timetable-time">
+                <span class="time-start">14:40</span>
+                <span class="time-end">15:10</span>
+                <span class="time-duration">30분</span>
+              </div>
+              <div class="timetable-bar"></div>
+              <div class="timetable-content">
+                <div class="content-category">사업 이해</div>
+                <h3 class="content-title">글로벌 LNG 시장</h3>
+                <p class="content-desc">회사 사업 이해 세션 | 진행: 하동원 상무</p>
+              </div>
+            </div>
+
+            <div class="timetable-item break">
+              <div class="timetable-time">
+                <span class="time-start">15:10</span>
+                <span class="time-end">15:30</span>
+                <span class="time-duration">20분</span>
+              </div>
+              <div class="timetable-bar"></div>
+              <div class="timetable-content">
+                <div class="content-category">휴식</div>
+                <h3 class="content-title">휴식 (케이터링 준비)</h3>
+                <p class="content-desc">장내 정리 시간</p>
+              </div>
+            </div>
+
+            <div class="timetable-item main-event highlight-item">
+              <div class="timetable-time">
+                <span class="time-start">15:30</span>
+                <span class="time-end">16:30</span>
+                <span class="time-duration">60분</span>
+              </div>
+              <div class="timetable-bar"></div>
+              <div class="timetable-content">
+                <div class="content-category">메인 행사</div>
+                <h3 class="content-title">경영현황설명회</h3>
+                <p class="content-desc">경영 현황 공유 | 진행: CEO</p>
+                <div class="content-tags">
+                  <span class="tag">2025년 실적</span>
+                  <span class="tag">2026년 사업목표</span>
+                  <span class="tag">중점 과제</span>
+                  <span class="tag">조직문화</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timetable-item networking">
+              <div class="timetable-time">
+                <span class="time-start">16:30</span>
+                <span class="time-end">17:30</span>
+                <span class="time-duration">60분</span>
+              </div>
+              <div class="timetable-bar"></div>
+              <div class="timetable-content">
+                <div class="content-category">소통</div>
+                <h3 class="content-title">소통의 시간</h3>
+                <p class="content-desc">핑거푸드 케이터링 | 당진·서울 직원 조별 혼합 착석</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 귀가 -->
+        <div class="timetable-period">
+          <div class="period-label return">
+            <span>귀가</span>
+          </div>
+          <div class="timetable-items">
+            <div class="timetable-item transport">
+              <div class="timetable-time">
+                <span class="time-start">17:00</span>
+                <span class="time-end">19:10</span>
+                <span class="time-duration">귀가</span>
+              </div>
+              <div class="timetable-bar"></div>
+              <div class="timetable-content">
+                <div class="content-category">이동</div>
+                <h3 class="content-title">서울 귀가 버스 출발</h3>
+                <p class="content-desc">당진발전소 출발 → GS타워 / 서울역 도착</p>
+                <button class="content-btn" onclick="openModal('busModal')">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                  버스 탑승 안내 보기
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- QUICK INFO CARDS -->
+    <section class="section info-section">
+      <div class="section-header">
+        <h2 class="section-title">주요 안내</h2>
+        <p class="section-subtitle">행사 참석 전 꼭 확인하세요</p>
+      </div>
+      <div class="info-grid">
+        <div class="info-card" onclick="openModal('lectureModal')">
+          <div class="info-icon lecture-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+          </div>
+          <h3>외부 강사 특강</h3>
+          <p>아주대 박재연 교수<br>미술사 인문학 특강 안내</p>
+          <span class="info-link">자세히 보기 →</span>
+        </div>
+        <div class="info-card" onclick="openModal('busModal')">
+          <div class="info-icon bus-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h3>버스 탑승 안내</h3>
+          <p>GS타워 / 서울역 출발<br>노선 및 탑승자 명단 확인</p>
+          <span class="info-link">자세히 보기 →</span>
+        </div>
+        <div class="info-card" onclick="openModal('mealModal')">
+          <div class="info-icon meal-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          </div>
+          <h3>식사 메뉴</h3>
+          <p>점심: 한식 특식 (구내식당)<br>오후: 핑거푸드 케이터링</p>
+          <span class="info-link">자세히 보기 →</span>
+        </div>
+        <div class="info-card" onclick="openModal('newcomerModal')">
+          <div class="info-icon newcomer-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3>신규 입사자</h3>
+          <p>25년 12월 이후 입사자 4명<br>오프닝 세션에서 인사 예정</p>
+          <span class="info-link">자세히 보기 →</span>
+        </div>
+        <div class="info-card" onclick="openModal('groupModal')">
+          <div class="info-icon group-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+          </div>
+          <h3>조 편성</h3>
+          <p>1조 ~ 19조 + 운영진<br>내 이름으로 조 검색 가능</p>
+          <span class="info-link">자세히 보기 →</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- QR SHARE SECTION -->
+    <section class="section qr-section">
+      <div class="section-header">
+        <h2 class="section-title">앱 공유</h2>
+        <p class="section-subtitle">동료에게 이 페이지를 공유하세요</p>
+      </div>
+      <div class="qr-card">
+        <div class="qr-code-wrapper">
+          <div id="qrcode"></div>
+        </div>
+        <div class="qr-info">
+          <p class="qr-label">QR코드를 스캔하면<br>바로 이 페이지로 이동합니다</p>
+          <p class="qr-url" id="qrUrlText"></p>
+          <button class="qr-copy-btn" onclick="copyUrl()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+            <span id="copyBtnText">링크 복사</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© 2026 GS EPS | 기획팀 주관</p>
+    <p class="footer-sub">문의: 기획팀</p>
+  </footer>
+
+  <!-- ===================================================== -->
+  <!-- MODAL: 외부 강사 특강 -->
+  <!-- ===================================================== -->
+  <div class="modal-overlay" id="lectureModal" onclick="closeModalOutside(event, 'lectureModal')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('lectureModal')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <div class="modal-header lecture-header">
+        <div class="modal-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+        </div>
+        <div>
+          <p class="modal-label">외부 강사 특강</p>
+          <h2 class="modal-title">인문학 특강 안내</h2>
+        </div>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="lecture-topic-card">
+          <div class="topic-badge">특강 주제</div>
+          <h3 class="topic-title">보이지 않는 것을 결정하는 힘:<br>미술사 속 '프레임'의 역사</h3>
+          <p class="topic-desc">무엇이 선택되고 배제되는지를 통해 조직과 의사결정 구조를 성찰하는 내용</p>
+          <div class="topic-keywords">
+            <span class="keyword">조직</span>
+            <span class="keyword">선택</span>
+            <span class="keyword">관점</span>
+            <span class="keyword">구조</span>
+          </div>
+        </div>
+
+        <div class="modal-info-row">
+          <div class="modal-info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <div>
+              <p class="info-label">시간</p>
+              <p class="info-value">10:20 – 11:40 (80분)</p>
+            </div>
+          </div>
+          <div class="modal-info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <div>
+              <p class="info-label">강사</p>
+              <p class="info-value">박재연 교수 (아주대)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-card">
+          <div class="profile-avatar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <div class="profile-info">
+            <h4 class="profile-name">박재연 교수</h4>
+            <p class="profile-org">아주대학교 문화콘텐츠학과 조교수</p>
+          </div>
+        </div>
+
+        <div class="profile-details">
+          <div class="profile-section">
+            <h5 class="profile-section-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              학력
+            </h5>
+            <ul class="profile-list">
+              <li>파리 제1대학 미술사학 박사</li>
+              <li>파리 고등사회과학연구원 석사</li>
+              <li>파리 제1대학 미술사학 석사 · 학사</li>
+              <li>서울대학교 불어불문학과 학사</li>
+            </ul>
+          </div>
+          <div class="profile-section">
+            <h5 class="profile-section-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+              경력
+            </h5>
+            <ul class="profile-list">
+              <li>현) 아주대 문화콘텐츠학과 조교수</li>
+              <li>전) 숙명여대, 서울대, 한국외대, 한국전통문화대 출강</li>
+            </ul>
+          </div>
+          <div class="profile-section">
+            <h5 class="profile-section-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              수상 및 저서
+            </h5>
+            <ul class="profile-list">
+              <li>2023 · 2024 문화체육관광부 장관표창</li>
+              <li>저서: <em>모던 빠리</em>, <em>주머니 쏙! 미술</em>, <em>두번째 미술사</em></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================== -->
+  <!-- MODAL: 버스 탑승 안내 -->
+  <!-- ===================================================== -->
+  <div class="modal-overlay" id="busModal" onclick="closeModalOutside(event, 'busModal')">
+    <div class="modal-box modal-box-wide">
+      <button class="modal-close" onclick="closeModal('busModal')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <div class="modal-header bus-header">
+        <div class="modal-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        <div>
+          <p class="modal-label">단체 버스 탑승 안내</p>
+          <h2 class="modal-title">버스 운행 안내</h2>
+        </div>
+      </div>
+
+      <div class="modal-body">
+
+        <!-- 노선 안내 -->
+        <div class="bus-routes">
+          <h3 class="bus-section-title">노선 및 시간표</h3>
+
+          <div class="bus-route-cards">
+            <!-- 1호차 -->
+            <div class="bus-card bus1">
+              <div class="bus-card-header">
+                <span class="bus-number">1호차</span>
+                <span class="bus-capacity">45인승</span>
+              </div>
+              <div class="bus-route-detail">
+                <div class="route-section">
+                  <p class="route-dir">🚌 가는 편</p>
+                  <div class="route-stops">
+                    <div class="stop">
+                      <span class="stop-time">08:30</span>
+                      <span class="stop-dot"></span>
+                      <span class="stop-name">동천역 출발</span>
+                    </div>
+                    <div class="stop-line"></div>
+                    <div class="stop">
+                      <span class="stop-time">09:05</span>
+                      <span class="stop-dot"></span>
+                      <span class="stop-name">GS타워 출발</span>
+                    </div>
+                    <div class="stop-line"></div>
+                    <div class="stop arrival">
+                      <span class="stop-time">10:00</span>
+                      <span class="stop-dot"></span>
+                      <span class="stop-name">당진발전소 도착</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="route-section">
+                  <p class="route-dir">🏠 오는 편</p>
+                  <div class="route-stops">
+                    <div class="stop">
+                      <span class="stop-time">17:00</span>
+                      <span class="stop-dot"></span>
+                      <span class="stop-name">당진발전소 출발</span>
+                    </div>
+                    <div class="stop-line"></div>
+                    <div class="stop">
+                      <span class="stop-time">18:20</span>
+                      <span class="stop-dot"></span>
+                      <span class="stop-name">죽전휴게소 경유</span>
+                    </div>
+                    <div class="stop-line"></div>
+                    <div class="stop arrival">
+                      <span class="stop-time">19:10</span>
+                      <span class="stop-dot"></span>
+                      <span class="stop-name">GS타워 도착</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bus-pickup-note">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                탑승 장소: GS 타워 아트센터 포비브라이트 앞 → 동천역 환승정류장
+              </div>
+            </div>
+
+            <!-- 2호차 -->
+            <div class="bus-card bus2">
+              <div class="bus-card-header">
+                <span class="bus-number">2호차</span>
+                <span class="bus-capacity">25인승</span>
+              </div>
+              <div class="bus-route-detail">
+                <div class="route-section">
+                  <p class="route-dir">🚌 가는 편</p>
+                  <div class="route-stops">
+                    <div class="stop">
+                      <span class="stop-time">08:30</span>
+                      <span class="stop-dot"></span>
+                      <span class="stop-name">서울역 출발</span>
+                    </div>
+                    <div class="stop-line"></div>
+                    <div class="stop arrival">
+                      <span class="stop-time">10:00</span>
+                      <span class="stop-dot"></span>
+                      <span class="stop-name">당진발전소 도착</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="route-section">
+                  <p class="route-dir">🏠 오는 편</p>
+                  <div class="route-stops">
+                    <div class="stop">
+                      <span class="stop-time">17:00</span>
+                      <span class="stop-dot"></span>
+                      <span class="stop-name">당진발전소 출발</span>
+                    </div>
+                    <div class="stop-line"></div>
+                    <div class="stop arrival">
+                      <span class="stop-time">19:00</span>
+                      <span class="stop-dot"></span>
+                      <span class="stop-name">서울역 도착</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bus-pickup-note">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                탑승 장소: 롯데마트 제타플렉스 서울역점 앞
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 탑승자 명단 탭 -->
+        <div class="bus-passengers">
+          <h3 class="bus-section-title">탑승자 명단</h3>
+          <div class="tab-group">
+            <button class="tab-btn active" onclick="switchTab('bus1tab')">1호차 (GS타워 출발)</button>
+            <button class="tab-btn" onclick="switchTab('bus2tab')">2호차 (서울역 출발)</button>
+          </div>
+
+          <div class="tab-content active" id="bus1tab">
+            <div class="passenger-table-wrapper">
+              <table class="passenger-table">
+                <thead>
+                  <tr>
+                    <th>No.</th>
+                    <th>부서명</th>
+                    <th>성명</th>
+                    <th>직책</th>
+                    <th>비고</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>1</td><td>기후환경팀</td><td>안상효</td><td>팀장</td><td class="note">출발 버스만 탑승</td></tr>
+                  <tr><td>2</td><td>DAX팀</td><td>김탁용</td><td>팀장</td><td class="note">귀가 버스만 탑승</td></tr>
+                  <tr><td>3</td><td>기후환경팀</td><td>정도환</td><td>매니저</td><td></td></tr>
+                  <tr><td>4</td><td>LNG팀</td><td>이은규</td><td>매니저</td><td></td></tr>
+                  <tr><td>5</td><td>LNG팀</td><td>임지혁</td><td>매니저</td><td></td></tr>
+                  <tr><td>6</td><td>구매팀</td><td>정상윤</td><td>매니저</td><td></td></tr>
+                  <tr><td>7</td><td>구매팀</td><td>박요민</td><td>매니저</td><td></td></tr>
+                  <tr><td>8</td><td>구매팀</td><td>이승훈</td><td>매니저</td><td></td></tr>
+                  <tr><td>9</td><td>재무팀</td><td>문건일</td><td>매니저</td><td></td></tr>
+                  <tr><td>10</td><td>재무팀</td><td>이채현</td><td>매니저</td><td></td></tr>
+                  <tr><td>11</td><td>인사팀</td><td>조성훈</td><td>매니저</td><td></td></tr>
+                  <tr class="highlight-row"><td>12</td><td>인사팀</td><td>지수연</td><td>매니저</td><td class="note">선탑자</td></tr>
+                  <tr><td>13</td><td>인사팀OH</td><td>박은주</td><td>매니저</td><td></td></tr>
+                  <tr><td>14</td><td>인사팀OH</td><td>유민정</td><td>매니저</td><td></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="tab-content" id="bus2tab">
+            <div class="passenger-table-wrapper">
+              <table class="passenger-table">
+                <thead>
+                  <tr>
+                    <th>No.</th>
+                    <th>부서명</th>
+                    <th>성명</th>
+                    <th>직책</th>
+                    <th>비고</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>1</td><td>재무팀</td><td>허재영</td><td>팀장</td><td></td></tr>
+                  <tr><td>2</td><td>준법지원팀</td><td>권영지</td><td>팀장</td><td></td></tr>
+                  <tr><td>3</td><td>전력정책팀</td><td>최유진</td><td>매니저</td><td></td></tr>
+                  <tr class="highlight-row"><td>4</td><td>전력정책팀</td><td>조한솔</td><td>매니저</td><td class="note">선탑자</td></tr>
+                  <tr><td>5</td><td>전력정책팀</td><td>이한주</td><td>매니저</td><td></td></tr>
+                  <tr><td>6</td><td>시장운영팀</td><td>남윤우</td><td>매니저</td><td></td></tr>
+                  <tr><td>7</td><td>시장운영팀</td><td>유아영</td><td>매니저</td><td></td></tr>
+                  <tr><td>8</td><td>LNG팀</td><td>임혜리</td><td>매니저</td><td></td></tr>
+                  <tr><td>9</td><td>LNG팀</td><td>고영선</td><td>매니저</td><td></td></tr>
+                  <tr><td>10</td><td>구매팀</td><td>김홍섭</td><td>매니저</td><td></td></tr>
+                  <tr><td>11</td><td>구매팀</td><td>양승문</td><td>매니저</td><td></td></tr>
+                  <tr><td>12</td><td>재무팀</td><td>도용두</td><td>매니저</td><td></td></tr>
+                  <tr><td>13</td><td>재무팀</td><td>이철웅</td><td>매니저</td><td></td></tr>
+                  <tr><td>14</td><td>재무팀</td><td>윤수현</td><td>매니저</td><td></td></tr>
+                  <tr><td>15</td><td>준법지원팀</td><td>박수빈</td><td>매니저</td><td></td></tr>
+                  <tr><td>16</td><td>인사팀</td><td>정진훈</td><td>매니저</td><td></td></tr>
+                  <tr><td>17</td><td>인사팀</td><td>조윤경</td><td>매니저</td><td></td></tr>
+                  <tr><td>18</td><td>DAX팀</td><td>박대인</td><td>매니저</td><td></td></tr>
+                  <tr><td>19</td><td>열병합건설팀</td><td>최수현</td><td>매니저</td><td></td></tr>
+                  <tr><td>20</td><td>LNG팀</td><td>홍현식</td><td>팀장</td><td></td></tr>
+                  <tr><td>21</td><td>시장운영팀</td><td>이태주</td><td>매니저</td><td></td></tr>
+                  <tr><td>22</td><td>기후환경팀</td><td>김지용</td><td>매니저</td><td></td></tr>
+                  <tr><td>23</td><td>구매팀</td><td>이병남</td><td>매니저</td><td></td></tr>
+                  <tr><td>24</td><td>재무팀</td><td>김지혜</td><td>매니저</td><td></td></tr>
+                  <tr><td>25</td><td>준법지원팀</td><td>양은상</td><td>매니저</td><td></td></tr>
+                  <tr><td>26</td><td>IT보안팀</td><td>권진아</td><td>매니저</td><td></td></tr>
+                  <tr><td>27</td><td>기후환경팀</td><td>안상효</td><td>팀장</td><td></td></tr>
+                  <tr><td>28</td><td>구매팀</td><td>이영일</td><td>매니저</td><td class="note">귀가 버스만 탑승</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================== -->
+  <!-- MODAL: 식사 메뉴 -->
+  <!-- ===================================================== -->
+  <div class="modal-overlay" id="mealModal" onclick="closeModalOutside(event, 'mealModal')">
+    <div class="modal-box modal-box-wide">
+      <button class="modal-close" onclick="closeModal('mealModal')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <div class="modal-header meal-header">
+        <div class="modal-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+        </div>
+        <div>
+          <p class="modal-label">식사 안내</p>
+          <h2 class="modal-title">식사 메뉴</h2>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="meal-blocks">
+
+          <!-- 점심식사 블록 -->
+          <div class="meal-block lunch-block">
+            <div class="meal-block-header">
+              <div class="meal-block-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+              </div>
+              <div>
+                <p class="meal-block-time">12:10 – 14:00</p>
+                <h3 class="meal-block-title">점심식사</h3>
+                <p class="meal-block-sub">구내 식당 · 한식 특식 · 당진·서울 직원 조별 혼합 착석</p>
+              </div>
+            </div>
+            <div class="meal-menu-list">
+              <div class="meal-menu-item">
+                <span class="menu-dot"></span>
+                <span>제육보쌈 <em>(새우젓, 쌈장)</em></span>
+              </div>
+              <div class="meal-menu-item">
+                <span class="menu-dot"></span>
+                <span>쌀밥</span>
+              </div>
+              <div class="meal-menu-item">
+                <span class="menu-dot"></span>
+                <span>대나무잎밥 <em>(2ps)</em></span>
+              </div>
+              <div class="meal-menu-item">
+                <span class="menu-dot"></span>
+                <span>냉이된장찌개</span>
+              </div>
+              <div class="meal-menu-item">
+                <span class="menu-dot"></span>
+                <span>상추·깻잎쌈</span>
+              </div>
+              <div class="meal-menu-item">
+                <span class="menu-dot"></span>
+                <span>속초식 명태초무침</span>
+              </div>
+              <div class="meal-menu-item">
+                <span class="menu-dot"></span>
+                <span>풋고추·마늘</span>
+              </div>
+              <div class="meal-menu-item">
+                <span class="menu-dot"></span>
+                <span>포기김치</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 핑거푸드 블록 -->
+          <div class="meal-block catering-block">
+            <div class="meal-block-header">
+              <div class="meal-block-icon catering-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/><path d="M12 8v4l3 3"/></svg>
+              </div>
+              <div>
+                <p class="meal-block-time">16:30 – 17:30</p>
+                <h3 class="meal-block-title">핑거푸드 케이터링</h3>
+                <p class="meal-block-sub">소통의 시간 · 스타일쿡 · 당진·서울 직원 조별 혼합 착석</p>
+              </div>
+            </div>
+
+            <div class="catering-sections">
+              <div class="catering-section">
+                <p class="catering-section-label">식사류</p>
+                <div class="meal-menu-list">
+                  <div class="meal-menu-item">
+                    <span class="menu-dot catering-dot"></span>
+                    <span>카야잼 샌드위치 &amp; 미니 크루아상 샌드위치</span>
+                  </div>
+                  <div class="meal-menu-item">
+                    <span class="menu-dot catering-dot"></span>
+                    <span>닭강정</span>
+                  </div>
+                  <div class="meal-menu-item">
+                    <span class="menu-dot catering-dot"></span>
+                    <span>토마토 카프레제 꼬치</span>
+                  </div>
+                  <div class="meal-menu-item">
+                    <span class="menu-dot catering-dot"></span>
+                    <span>새우 베이컨말이</span>
+                  </div>
+                  <div class="meal-menu-item">
+                    <span class="menu-dot catering-dot"></span>
+                    <span>모듬 라이스 <em>(유부초밥, 김밥, 초밥, 쌈밥)</em></span>
+                  </div>
+                  <div class="meal-menu-item">
+                    <span class="menu-dot catering-dot"></span>
+                    <span>대파 닭꼬치</span>
+                  </div>
+                  <div class="meal-menu-item">
+                    <span class="menu-dot catering-dot"></span>
+                    <span>바질 페스토 파스타</span>
+                  </div>
+                </div>
+              </div>
+              <div class="catering-section">
+                <p class="catering-section-label">디저트 &amp; 음료</p>
+                <div class="meal-menu-list">
+                  <div class="meal-menu-item">
+                    <span class="menu-dot catering-dot"></span>
+                    <span>로고 쿠키</span>
+                  </div>
+                  <div class="meal-menu-item">
+                    <span class="menu-dot catering-dot"></span>
+                    <span>까나페</span>
+                  </div>
+                  <div class="meal-menu-item">
+                    <span class="menu-dot catering-dot"></span>
+                    <span>로고 마카롱</span>
+                  </div>
+                  <div class="meal-menu-item">
+                    <span class="menu-dot catering-dot"></span>
+                    <span>과일</span>
+                  </div>
+                  <div class="meal-menu-item">
+                    <span class="menu-dot catering-dot"></span>
+                    <span>음료수</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================== -->
+  <!-- MODAL: 신규 입사자 -->
+  <!-- ===================================================== -->
+  <div class="modal-overlay" id="newcomerModal" onclick="closeModalOutside(event, 'newcomerModal')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('newcomerModal')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <div class="modal-header newcomer-header">
+        <div class="modal-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <div>
+          <p class="modal-label">오프닝 세션</p>
+          <h2 class="modal-title">신규 입사자 인사</h2>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="newcomer-intro">
+          <p>이번 경영현황설명회 오프닝에서 <strong>2025년 12월 이후 입사한 4명</strong>의 신규 동료를 소개합니다. 따뜻한 환영 부탁드립니다! 🎉</p>
+        </div>
+
+        <div class="newcomer-list">
+          <div class="newcomer-card">
+            <div class="newcomer-avatar">임</div>
+            <div class="newcomer-info">
+              <p class="newcomer-name">임현규 매니저</p>
+              <p class="newcomer-dept">LNG전기팀</p>
+              <p class="newcomer-date">2025. 12. 01 입사</p>
+            </div>
+          </div>
+          <div class="newcomer-card">
+            <div class="newcomer-avatar">권</div>
+            <div class="newcomer-info">
+              <p class="newcomer-name">권진아 매니저</p>
+              <p class="newcomer-dept">IT 보안팀</p>
+              <p class="newcomer-date">2025. 12. 22 입사</p>
+            </div>
+          </div>
+          <div class="newcomer-card">
+            <div class="newcomer-avatar">박</div>
+            <div class="newcomer-info">
+              <p class="newcomer-name">박수빈 매니저</p>
+              <p class="newcomer-dept">준법지원팀</p>
+              <p class="newcomer-date">2026. 01. 01 입사</p>
+            </div>
+          </div>
+          <div class="newcomer-card">
+            <div class="newcomer-avatar">박</div>
+            <div class="newcomer-info">
+              <p class="newcomer-name">박영환 매니저</p>
+              <p class="newcomer-dept">Biomass 발전팀</p>
+              <p class="newcomer-date">2026. 01. 19 입사</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="newcomer-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          오프닝 세션 (10:10 – 10:20) | 진행: 문인성 팀장
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================== -->
+  <!-- MODAL: 조 편성 -->
+  <!-- ===================================================== -->
+  <div class="modal-overlay" id="groupModal" onclick="closeModalOutside(event, 'groupModal')">
+    <div class="modal-box modal-box-wide modal-box-full">
+      <button class="modal-close" onclick="closeModal('groupModal')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <div class="modal-header group-header">
+        <div class="modal-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+        </div>
+        <div>
+          <p class="modal-label">테이블 배치</p>
+          <h2 class="modal-title">조 편성표</h2>
+        </div>
+      </div>
+
+      <div class="modal-body">
+
+        <!-- 검색 -->
+        <div class="group-search-bar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="groupSearchInput" placeholder="이름으로 내 조 찾기..." oninput="filterGroups(this.value)" autocomplete="off" />
+          <button class="group-search-clear" id="groupSearchClear" onclick="clearGroupSearch()" style="display:none">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+
+        <!-- 검색 결과 -->
+        <div id="groupSearchResult" class="group-search-result" style="display:none"></div>
+
+        <!-- 조 탭 네비게이션 -->
+        <div class="group-tab-nav" id="groupTabNav"></div>
+
+        <!-- 조 내용 -->
+        <div id="groupContent"></div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- QR Code library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
