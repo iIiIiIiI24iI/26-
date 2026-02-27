@@ -455,18 +455,7 @@ function clearGroupSearch() {
   const urlEl = document.getElementById('qrUrlText');
   if (urlEl) urlEl.textContent = url;
 
-  /* generate QR code */
-  const qrEl = document.getElementById('qrcode');
-  if (qrEl && typeof QRCode !== 'undefined') {
-    new QRCode(qrEl, {
-      text: url,
-      width: 160,
-      height: 160,
-      colorDark: '#1a3a2a',
-      colorLight: '#ffffff',
-      correctLevel: QRCode.CorrectLevel.M
-    });
-  }
+  /* QR code: static image used instead of dynamic generation */
 })();
 
 function copyUrl() {
