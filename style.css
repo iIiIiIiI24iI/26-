@@ -987,6 +987,19 @@ body {
   margin-top: .1rem;
 }
 
+.bus-location-img-wrap {
+  border-top: 1px solid var(--gray-100);
+  overflow: hidden;
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+}
+
+.bus-location-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
 /* Tabs */
 .tab-group {
   display: flex;
