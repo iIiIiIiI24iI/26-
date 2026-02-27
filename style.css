@@ -1145,6 +1145,11 @@ body {
   stroke: #fff;
 }
 
+.meal-block-icon {
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
 .meal-block-icon.catering-icon {
   background: #3b82f6;
 }
