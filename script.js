@@ -63,12 +63,13 @@ var GROUP_DATA = [
     members: [
       { name: '황태규', dept: '전력정책부문', rank: '상무' },
       { name: '오명규', dept: 'Biomass 계전팀', rank: '팀장' },
+      { name: '권영지', dept: '준법지원팀', rank: '팀장' },
+      { name: '김길환', dept: 'LNG 발전2팀', rank: '파트장' },
       { name: '박창준', dept: '인사팀', rank: '매니저' },
       { name: '이경완', dept: '안전팀', rank: '매니저' },
       { name: '유돈근', dept: '발전기획팀', rank: '매니저' },
-      { name: '곽동욱', dept: 'Biomass 발전부문 O/H', rank: '매니저' },
       { name: '임현규', dept: 'LNG전기팀', rank: '매니저' },
-      { name: '권영지', dept: '준법지원팀', rank: '팀장' }
+      { name: '곽동욱', dept: 'Biomass발전부문OH', rank: '매니저' }
     ]
   },
   {
@@ -80,8 +81,9 @@ var GROUP_DATA = [
       { name: '최수현', dept: '열병합건설팀', rank: '매니저' },
       { name: '김휴민', dept: '지역협력팀', rank: '매니저' },
       { name: '안태현', dept: 'Biomass 계전팀', rank: '매니저' },
+      { name: '백재은', dept: '사업지원팀', rank: '매니저' },
       { name: '박시현', dept: 'LNG제어팀', rank: '매니저' },
-      { name: '백재은', dept: '사업지원팀', rank: '매니저' }
+      { name: '김재만', dept: 'Biomass 발전팀', rank: '매니저' }
     ]
   },
   {
@@ -90,11 +92,12 @@ var GROUP_DATA = [
       { name: '김응환', dept: 'CSO', rank: '전무' },
       { name: '허재영', dept: '재무팀', rank: '팀장' },
       { name: '임지혁', dept: 'LNG팀', rank: '매니저' },
+      { name: '박수빈', dept: '준법지원팀', rank: '매니저' },
       { name: '김현욱', dept: '발전기획팀', rank: '매니저' },
       { name: '김태윤', dept: 'DAX팀', rank: '매니저' },
       { name: '이혁우', dept: 'LNG제어팀', rank: '매니저' },
       { name: '박인후', dept: 'LNG기계팀', rank: '매니저' },
-      { name: '박수빈', dept: '준법지원팀', rank: '매니저' }
+      { name: '박영환', dept: 'Biomass 발전팀', rank: '매니저' }
     ]
   },
   {
@@ -103,11 +106,12 @@ var GROUP_DATA = [
       { name: '하동원', dept: '연료기획부문', rank: '상무' },
       { name: '심규봉', dept: 'LNG전기팀', rank: '팀장' },
       { name: '문건일', dept: '재무팀', rank: '매니저' },
-      { name: '최기백', dept: '열병합건설팀', rank: '매니저' },
       { name: '원준일', dept: 'DAX팀', rank: '매니저' },
       { name: '김일환', dept: 'LNG 발전2팀', rank: '매니저' },
       { name: '배지훈', dept: 'LNG전기팀', rank: '매니저' },
-      { name: '임지훈', dept: '환경팀', rank: '매니저' }
+      { name: '최기백', dept: '열병합건설팀', rank: '매니저' },
+      { name: '임지훈', dept: '환경팀', rank: '매니저' },
+      { name: '박정수', dept: 'Biomass 발전팀', rank: '매니저' }
     ]
   },
   {
@@ -120,7 +124,8 @@ var GROUP_DATA = [
       { name: '도용두', dept: '재무팀', rank: '매니저' },
       { name: '남경훈', dept: 'LNG 발전2팀', rank: '매니저' },
       { name: '남영규', dept: 'LNG전기팀', rank: '매니저' },
-      { name: '류경환', dept: '사업지원팀', rank: '매니저' }
+      { name: '류경환', dept: '사업지원팀', rank: '매니저' },
+      { name: '한현수', dept: 'Biomass 발전팀', rank: '매니저' }
     ]
   },
   {
@@ -160,7 +165,8 @@ var GROUP_DATA = [
       { name: '박대인', dept: 'DAX팀', rank: '매니저' },
       { name: '강필성', dept: 'Biomass 계전팀', rank: '매니저' },
       { name: '김행찬', dept: 'LNG제어팀', rank: '매니저' },
-      { name: '김시곤', dept: '연료설비팀', rank: '매니저' }
+      { name: '김시곤', dept: '연료설비팀', rank: '매니저' },
+      { name: '장홍준', dept: 'LNG 발전2팀', rank: '매니저' }
     ]
   },
   {
