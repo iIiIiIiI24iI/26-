@@ -173,7 +173,6 @@ var GROUP_DATA = [
     members: [
       { name: '김명석', dept: '발전사업본부', rank: '상무보' },
       { name: '홍현식', dept: 'LNG팀', rank: '팀장' },
-      { name: '한규연', dept: '구매팀', rank: '매니저' },
       { name: '정환담', dept: '안전팀', rank: '매니저' },
       { name: '박종민', dept: 'LNG기계팀', rank: '매니저' },
       { name: '김용훈', dept: '열병합건설팀', rank: '매니저' },
