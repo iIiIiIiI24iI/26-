@@ -64,12 +64,12 @@ var GROUP_DATA = [
       { name: '황태규', dept: '전력정책부문', rank: '상무' },
       { name: '오명규', dept: 'Biomass 계전팀', rank: '팀장' },
       { name: '권영지', dept: '준법지원팀', rank: '팀장' },
-      { name: '김길환', dept: 'LNG 발전2팀', rank: '파트장' },
       { name: '박창준', dept: '인사팀', rank: '매니저' },
       { name: '이경완', dept: '안전팀', rank: '매니저' },
       { name: '유돈근', dept: '발전기획팀', rank: '매니저' },
       { name: '임현규', dept: 'LNG전기팀', rank: '매니저' },
-      { name: '곽동욱', dept: 'Biomass발전부문OH', rank: '매니저' }
+      { name: '곽동욱', dept: 'Biomass발전부문OH', rank: '매니저' },
+      { name: '장홍준', dept: 'LNG 발전2팀', rank: '매니저' }
     ]
   },
   {
@@ -135,7 +135,7 @@ var GROUP_DATA = [
       { name: '장광수', dept: '인사팀', rank: '팀장' },
       { name: '윤수현', dept: '재무팀', rank: '매니저' },
       { name: '이영일', dept: '인사팀OH', rank: '매니저' },
-      { name: '유용상', dept: 'Biomass 기계팀', rank: '매니저' },
+      { name: '유용상', dept: '발전사업본부OH', rank: '팀장' },
       { name: '류다빈', dept: 'DAX팀', rank: '매니저' },
       { name: '조치연', dept: '사업지원팀', rank: '매니저' },
       { name: '김종우', dept: '환경팀', rank: '매니저' }
@@ -165,8 +165,7 @@ var GROUP_DATA = [
       { name: '박대인', dept: 'DAX팀', rank: '매니저' },
       { name: '강필성', dept: 'Biomass 계전팀', rank: '매니저' },
       { name: '김행찬', dept: 'LNG제어팀', rank: '매니저' },
-      { name: '김시곤', dept: '연료설비팀', rank: '매니저' },
-      { name: '장홍준', dept: 'LNG 발전2팀', rank: '매니저' }
+      { name: '김시곤', dept: '연료설비팀', rank: '매니저' }
     ]
   },
   {
