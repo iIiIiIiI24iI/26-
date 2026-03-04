@@ -244,7 +244,6 @@ var GROUP_DATA = [
       { name: '양승문', dept: '구매팀', rank: '매니저' },
       { name: '김화영', dept: '구매팀', rank: '매니저' },
       { name: '유민정', dept: '인사팀OH', rank: '매니저' },
-      { name: '박기행', dept: '사업지원팀', rank: '매니저' },
       { name: '장천호', dept: 'LNG발전1팀', rank: '매니저' },
       { name: '이소현', dept: '사업지원팀', rank: '매니저' },
       { name: '이해승', dept: 'IT보안팀', rank: '매니저' },
